@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{pkgs, ...}: let
   secrets = import ./secrets.nix;
 in {
   nix.settings.experimental-features = ["nix-command" "flakes"];

@@ -39,6 +39,9 @@
     spice
     spice-gtk
     spice-protocol
+    cdrkit
+    dosfstools
+    opentofu
     win-virtio
     win-spice
     bridge-utils
@@ -50,10 +53,6 @@
     path = with pkgs; [
       qemu_kvm
       nftables
-      cdrkit
-      dosfstools
-      cdrkit
-      opentofu
       bridge-utils
     ];
   };

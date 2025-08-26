@@ -51,6 +51,8 @@
       qemu_kvm
       nftables
       cdrkit
+      dosfstools
+      cdrkit
       opentofu
       bridge-utils
     ];

@@ -11,7 +11,7 @@ if [ $? -eq 0 ]; then
         echo "Rebuilding NixOS configuration..."
         nixos-rebuild switch
         echo "Deployment complete!"
-    EOF
+EOF
 else
     echo "Push failed, deployment aborted"
     exit 1

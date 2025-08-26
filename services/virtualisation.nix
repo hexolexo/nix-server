@@ -50,7 +50,7 @@
     path = with pkgs; [
       qemu_kvm
       nftables
-      terraform
+      opentofu
       bridge-utils
     ];
   };

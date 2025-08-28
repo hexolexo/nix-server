@@ -7,6 +7,7 @@ in {
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     #./containers/minecraft.nix
+    ./containers/mindustry.nix
     #./containers/terraria.nix
     #./containers/I2P.nix
     #./containers/jellyfin.nix

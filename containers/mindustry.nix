@@ -83,5 +83,6 @@
       system.stateVersion = "25.05";
     };
   };
-  networking.firewall.allowedTCPPorts = []; # Firewall is configured per service bundle
+  networking.firewall.allowedTCPPorts = [6567];
+  networking.firewall.allowedUDPPorts = [6567];
 }

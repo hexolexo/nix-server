@@ -83,4 +83,5 @@
       system.stateVersion = "25.05";
     };
   };
+  networking.firewall.allowedTCPPorts = []; # Firewall is configured per service bundle
 }

@@ -42,7 +42,7 @@
 
           # Command to start the server
           # You can customize server settings here
-          ExecStart = "${pkgs.mindustry}/bin/mindustry server";
+          ExecStart = "${pkgs.mindustry}/bin/mindustry-server";
 
           # Restart the service if it fails
           Restart = "always";

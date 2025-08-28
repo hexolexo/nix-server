@@ -7,7 +7,7 @@ in {
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     #./containers/minecraft.nix
-    ./containers/mindustry.nix
+    #./containers/mindustry.nix
     #./containers/terraria.nix
     #./containers/I2P.nix
     #./containers/jellyfin.nix
@@ -17,7 +17,7 @@ in {
     ./containers/monitoring.nix
     #./services/duckdns.nix # unfinished
     #./services/step-ca.nix
-    ./containers/headscale.nix
+    #./containers/headscale.nix
     #./services/frigate-nvr.nix
     ./services/git.nix
     ./services/virtualisation.nix

@@ -18,6 +18,7 @@
       }
       {
         publicKey = "LIOuTaH9hb6tVrQHADclTFnCcRFD9DHjaVbNSevfGxc="; # toshi
+        persistentKeepalive = 25;
         allowedIPs = ["10.0.0.3/32"];
       }
       {

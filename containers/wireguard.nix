@@ -11,7 +11,12 @@
         privateKeyFile = "/etc/wireguard/private";
         listenPort = 51820;
         ips = ["10.0.0.1/24" "192.168.1.108/32"];
-        peers = [];
+        peers = [
+          {
+            publicKey = "vWCeMXGBA2v5bV+kX/otvPi/+v9DSAzKnrBqqbbB31k=";
+            allowedIPs = ["10.0.0.2/32"];
+          }
+        ];
       };
       networking.firewall.allowedUDPPorts = [51820];
 

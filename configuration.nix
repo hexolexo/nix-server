@@ -18,6 +18,7 @@ in {
     #./services/duckdns.nix # unfinished
     #./services/step-ca.nix
     #./containers/headscale.nix
+    ./containers/wireguard.nix
     #./services/frigate-nvr.nix
     ./services/git.nix
     ./services/virtualisation.nix

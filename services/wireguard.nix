@@ -26,6 +26,10 @@
         publicKey = "ePTxrL7Fgqdl6HO/ZImMHMLnXBysGQ8+h0t+6pBJiRE="; # guest
         allowedIPs = ["10.0.0.6/32"];
       }
+      {
+        publicKey = "7dfeqJu3P6toUdHD73g6c8j/SZyhhHGaUpXSPP3reng="; # phone
+        allowedIPs = ["10.0.0.7/32"];
+      }
     ];
   };
   networking.firewall.allowedUDPPorts = [51820];

@@ -30,10 +30,6 @@
         publicKey = "7dfeqJu3P6toUdHD73g6c8j/SZyhhHGaUpXSPP3reng="; # phone
         allowedIPs = ["10.0.0.7/32"];
       }
-      {
-        publicKey = "F+R+kym/eu51Ed5kYyWljlSQA+4cngBS5C4pZ8PsTTs="; # test
-        allowedIPs = ["10.0.0.9/32"];
-      }
     ];
   };
   networking.firewall.allowedUDPPorts = [51820];

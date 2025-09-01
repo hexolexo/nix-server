@@ -31,8 +31,8 @@
         allowedIPs = ["10.0.0.7/32"];
       }
       {
-        publicKey = "oOAk6XC+T97apUSNegb1Jaun9C7XxFoCVuL8P4OFNkI="; # testing
-        allowedIPs = ["10.0.0.8/32"];
+        publicKey = "F+R+kym/eu51Ed5kYyWljlSQA+4cngBS5C4pZ8PsTTs="; # test
+        allowedIPs = ["10.0.0.9/32"];
       }
     ];
   };

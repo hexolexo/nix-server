@@ -17,7 +17,7 @@
       settings.PasswordAuthentication = false;
     };
     fail2ban.enable = true;
-    tailscale.enable = true;
+    #tailscale.enable = true; # not needed right now
   };
   networking = {
     firewall.allowedTCPPorts = [

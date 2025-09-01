@@ -30,6 +30,14 @@
         publicKey = "7dfeqJu3P6toUdHD73g6c8j/SZyhhHGaUpXSPP3reng="; # phone
         allowedIPs = ["10.0.0.7/32"];
       }
+      {
+        publicKey = "vYJqxIRzAw79kVV1gdca5R31GnZVjx1PtT0tmh8jSis="; # beco
+        allowedIPs = ["10.0.0.8/32"];
+      }
+      {
+        publicKey = "tEqrq/OG096keu34qiTjuEdS4C87hxy5NkrmloVKyHY="; # sticklegs
+        allowedIPs = ["10.0.0.9/32"];
+      }
     ];
   };
   networking.firewall.allowedUDPPorts = [51820];

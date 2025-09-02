@@ -38,6 +38,10 @@
         publicKey = "tEqrq/OG096keu34qiTjuEdS4C87hxy5NkrmloVKyHY="; # sticklegs
         allowedIPs = ["10.0.0.9/32"];
       }
+      {
+        publicKey = "3kXYxT2uOFigoEhFzTt7X63MSt0Vt9v9/cI+z/HxVAY="; # beco-server
+        allowedIPs = ["10.0.0.10/32"];
+      }
     ];
   };
   networking.firewall.allowedUDPPorts = [51820];

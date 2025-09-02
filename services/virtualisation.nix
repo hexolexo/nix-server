@@ -38,7 +38,6 @@
     dosfstools
     opentofu
     libxslt # tofu window xml dependency
-    terraform
     win-virtio
     win-spice
     bridge-utils

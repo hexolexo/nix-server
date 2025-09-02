@@ -42,6 +42,8 @@
     cdrkit
     dosfstools
     opentofu
+    libxslt # tofu window xml dependancy
+    terraform
     win-virtio
     win-spice
     bridge-utils

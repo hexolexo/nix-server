@@ -21,11 +21,6 @@
 
     # Trust the libvirt bridge
     firewall.trustedInterfaces = ["virbr0" "virbr1"];
-
-    # Allow forwarding
-    #firewall.extraCommands = ''
-    #iptables -I FORWARD -m physdev --physdev-is-bridged -j ACCEPT
-    #'';
   };
   services.dnsmasq.enable = false;
 
@@ -42,7 +37,7 @@
     cdrkit
     dosfstools
     opentofu
-    libxslt # tofu window xml dependancy
+    libxslt # tofu window xml dependency
     terraform
     win-virtio
     win-spice

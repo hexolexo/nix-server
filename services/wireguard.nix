@@ -42,6 +42,10 @@
         publicKey = "3kXYxT2uOFigoEhFzTt7X63MSt0Vt9v9/cI+z/HxVAY="; # beco-server
         allowedIPs = ["10.0.0.10/32"];
       }
+      {
+        publicKey = "WHTgVz8DligoY53aAMHOso5UfTI3PfdPT+SVP1A+dQw="; # tempr
+        allowedIPs = ["10.0.0.11/32"];
+      }
     ];
   };
   networking.firewall.allowedUDPPorts = [51820];

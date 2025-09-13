@@ -84,6 +84,7 @@ in {
     git
     micro
     cargo
+    clang
   ];
 
   services.ntp = {

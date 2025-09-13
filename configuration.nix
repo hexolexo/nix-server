@@ -84,6 +84,8 @@ in {
     git
     micro
     cargo
+    pkg-config
+    alsa-lib.dev
     clang
   ];
 

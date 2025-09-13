@@ -83,6 +83,7 @@ in {
     btop
     git
     micro
+    cargo
   ];
 
   services.ntp = {

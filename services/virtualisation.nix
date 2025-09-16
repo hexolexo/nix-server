@@ -47,7 +47,6 @@
     python3Packages.pywinrm # Required for Windows management
     python3Packages.requests-ntlm # For NTLM authentication
     python3Packages.requests-credssp # For CredSSP authentication
-    sshpass # If you need password-based SSH
   ];
 
   # Ensure proper service ordering

@@ -13,6 +13,7 @@
     #};
     openssh = {
       enable = true;
+      PasswordAuthentication = false;
       ports = [6000];
       settings.PasswordAuthentication = false;
     };

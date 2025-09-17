@@ -14,7 +14,6 @@ in {
     ./containers/fuzzing.nix
     ./services/connection.nix
     ./containers/monitoring.nix
-    #./services/duckdns.nix # unfinished
     #./services/step-ca.nix
     #./containers/headscale.nix
     ./services/wireguard.nix

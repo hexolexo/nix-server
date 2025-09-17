@@ -28,16 +28,6 @@
     extraGroups = ["libvirtd"];
   };
 
-  services.prometheus.exporters.libvirt = {
-    enable = true;
-    user = "hexolexo";
-    group = "libvirtd";
-
-    port = 9101;
-    listenAddress = "127.0.0.1";
-    libvirtUri = "qemu:///system";
-  };
-
   environment.systemPackages = with pkgs; [
     virt-manager
     virt-viewer

@@ -51,14 +51,6 @@
           }
         ];
       }
-      {
-        job_name = "libvirtd";
-        static_configs = [
-          {
-            targets = ["localhost:9101"];
-          }
-        ];
-      }
     ];
     exporters.node = {
       enable = true;

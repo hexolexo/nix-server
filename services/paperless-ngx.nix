@@ -4,24 +4,24 @@ in {
   systemd.services.paperless-consumer.environment = {
     PAPERLESS_CONVERT_BINARY = "${pkgs.libreoffice}/bin/libreoffice";
     PAPERLESS_CONVERT_FILETYPES = convertFiletypes;
-    PAPERLESS_OCR_LANGUAGE = "deu+eng";
+    PAPERLESS_OCR_LANGUAGE = "eng";
     PAPERLESS_TASK_WORKERS = "16";
     PAPERLESS_THREADS_PER_WORKER = "2";
   };
 
   systemd.services.paperless-scheduler.environment = {
-    PAPERLESS_OCR_LANGUAGE = "deu+eng";
+    PAPERLESS_OCR_LANGUAGE = "eng";
   };
 
   systemd.services.paperless-web.environment = {
-    PAPERLESS_OCR_LANGUAGE = "deu+eng";
+    PAPERLESS_OCR_LANGUAGE = "eng";
   };
   services.paperless = {
     enable = true;
     address = "0.0.0.0";
     port = 58080;
     settings = {
-      PAPERLESS_OCR_LANGUAGE = "deu+eng";
+      PAPERLESS_OCR_LANGUAGE = "eng";
       #PAPERLESS_CONVERT_BINARY = "${pkgs.libreoffice}/bin/libreoffice";
       #PAPERLESS_CONVERT_TMPDIR = "/tmp";
       #PAPERLESS_CONVERT_FILETYPES = ".doc .docx .odt application/msword application/vnd.openxmlformats-officedocument.wordprocessingml.document";

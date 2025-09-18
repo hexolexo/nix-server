@@ -1,28 +1,26 @@
 {pkgs, ...}: let
   secrets = import ./secrets.nix;
 in {
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
   imports = [
+    # Required Services #
     ./hardware-configuration.nix
-    #./containers/minecraft.nix
-    #./containers/mindustry.nix
-    #./containers/terraria.nix
-    #./containers/I2P.nix
-    #./containers/jellyfin.nix
-    #./containers/benchmark.nix
-    #./containers/fuzzing.nix
     ./services/connection.nix
-    #./containers/monitoring.nix
-    #./services/step-ca.nix
-    #./containers/headscale.nix
     ./services/wireguard.nix
     ./services/git.nix
     ./services/virtualisation.nix
+    # Optional Services: #
     ./services/paperless-ngx.nix
-    #./services/cockpit.nix
-    #./containers/honeypot.nix
+    #./containers/minecraft.nix     # It's been a while since the last weeklong mc obsession with friends
+    #./containers/mindustry.nix
+    #./containers/terraria.nix      #  WARN: No clue if this one works
+    #./containers/I2P.nix           #  BUG: I think my ISP is blocking I2P
+    #./containers/jellyfin.nix
+    #./containers/fuzzing.nix       #  NOTE: I'll probably want to start using this at some point
+    #./containers/monitoring.nix    #  NOTE: Functional but uses to many resources for a simple project like this
+    #./services/cockpit.nix         #  WARN: Currently broken (And honestly will probably stay that way
+    #./containers/tarpit.nix
   ];
+
   # Bootloader.
   boot = {
     enableContainers = true;
@@ -36,19 +34,8 @@ in {
       efi.canTouchEfiVariables = true;
     };
   };
-  #boot = {
-  #enableContainers = true;
-  #loader = {
-  #grub.enable = true;
-  #grub.device = "/dev/sda";
-  #grub.useOSProber = true;
-  #};
-  ## tmp.cleanOnBoot = true; # This might clean out run and/or var which could be a massive issue
-  #};
 
-  # Set your time zone.
   time.timeZone = "Australia/Sydney";
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_AU.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_AU.UTF-8";
@@ -98,26 +85,31 @@ in {
   };
 
   networking = {
-    hostName = "vault"; # Define your hostname.
+    hostName = "vault";
     networkmanager.enable = true;
     firewall.enable = true;
-    firewall.allowedTCPPorts = []; # Firewall is configured per service bundle
+    firewall.allowedTCPPorts = []; #  NOTE: Firewall is configured per service bundle
   };
 
   system.autoUpgrade = {
     enable = true;
-    dates = "16:00";
+    dates = "16:00"; #  NOTE: I'll dial this back when I get busy
     allowReboot = true;
   };
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 3d";
+
+  nix = {
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 3d";
+    };
+    settings = {
+      experimental-features = ["nix-command" "flakes"];
+      max-jobs = 20;
+      cores = 0;
+      auto-optimise-store = true;
+    };
   };
-  nix.settings = {
-    max-jobs = 20;
-    cores = 0;
-    auto-optimise-store = true;
-  };
+
   system.stateVersion = "25.05";
 }

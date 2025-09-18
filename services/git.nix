@@ -7,6 +7,7 @@ in {
     settings = {
       name = "hexolexo's repos";
       description = "hexolexo's local repos";
+      ssh.public_url = "ssh://localgit";
       host = "192.168.0.88";
       port = 23231;
       initial_admin_keys = [

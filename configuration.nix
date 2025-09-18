@@ -11,18 +11,17 @@ in {
     #./containers/I2P.nix
     #./containers/jellyfin.nix
     #./containers/benchmark.nix
-    ./containers/fuzzing.nix
+    #./containers/fuzzing.nix
     ./services/connection.nix
-    ./containers/monitoring.nix
+    #./containers/monitoring.nix
     #./services/step-ca.nix
     #./containers/headscale.nix
     ./services/wireguard.nix
-    #./services/frigate-nvr.nix
     ./services/git.nix
     ./services/virtualisation.nix
     ./services/paperless-ngx.nix
     #./services/cockpit.nix
-    ./containers/honeypot.nix
+    #./containers/honeypot.nix
   ];
   # Bootloader.
   boot = {

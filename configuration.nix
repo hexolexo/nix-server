@@ -17,7 +17,7 @@ in {
     #./containers/jellyfin.nix
     #./containers/fuzzing.nix       #  NOTE: I'll probably want to start using this at some point
     #./containers/monitoring.nix    #  NOTE: Functional but uses to many resources for a simple project like this
-    #./services/cockpit.nix         #  WARN: Currently broken (And honestly will probably stay that way
+    #./services/cockpit.nix         #  WARN: Currently broken (And honestly will probably stay that way)
     #./containers/tarpit.nix
   ];
 

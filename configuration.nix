@@ -74,16 +74,6 @@ in {
     clang
   ];
 
-  services.ntp = {
-    enable = true;
-    servers = [
-      "0.au.pool.ntp.org"
-      "1.au.pool.ntp.org"
-      "2.au.pool.ntp.org"
-      "3.au.pool.ntp.org"
-    ];
-  };
-
   networking = {
     hostName = "vault";
     networkmanager.enable = true;
@@ -101,7 +91,7 @@ in {
     gc = {
       automatic = true;
       dates = "weekly";
-      options = "--delete-older-than 3d";
+      options = "--delete-older-than 7d";
     };
     settings = {
       experimental-features = ["nix-command" "flakes"];
@@ -110,6 +100,7 @@ in {
       auto-optimise-store = true;
     };
   };
+  services.smartd.enable = true;
 
   system.stateVersion = "25.05";
 }

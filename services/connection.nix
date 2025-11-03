@@ -9,7 +9,7 @@
   services = {
     openssh = {
       enable = true;
-      ports = [22 6000]; # Great...
+      ports = [6000];
       settings.PasswordAuthentication = false;
     };
     fail2ban.enable = true;

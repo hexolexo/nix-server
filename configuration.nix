@@ -9,7 +9,7 @@ in {
     ./services/git.nix
     ./services/virtualisation.nix
     # Optional Services: #
-    ./services/paperless-ngx.nix
+    #./services/paperless-ngx.nix
     #./containers/minecraft.nix     # It's been a while since the last weeklong mc obsession with friends
     #./containers/mindustry.nix
     #./containers/terraria.nix      #  WARN: No clue if this one works

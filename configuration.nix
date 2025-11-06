@@ -12,12 +12,11 @@ in {
     ./services/paperless-ngx.nix
     #./containers/minecraft.nix     # It's been a while since the last weeklong mc obsession with friends
     #./containers/mindustry.nix
-    #./containers/terraria.nix      #  WARN: No clue if this one works
-    #./containers/I2P.nix           #  BUG: I think my ISP is blocking I2P
+    #./containers/terraria.nix      #  WARN: Untested
+    #./containers/I2P.nix           #  BUG: ISP blocking port forwarding reducing it's efficacy
     #./containers/jellyfin.nix
     #./containers/fuzzing.nix       #  NOTE: I'll probably want to start using this at some point
-    #./containers/monitoring.nix    #  NOTE: Functional but uses to many resources for a simple project like this
-    #./services/cockpit.nix         #  WARN: Currently broken (And honestly will probably stay that way)
+    #./containers/monitoring.nix    #  NOTE: Functional but overkill for this project
     #./containers/tarpit.nix
   ];
 

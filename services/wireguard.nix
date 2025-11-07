@@ -8,16 +8,16 @@
         publicKey = "vWCeMXGBA2v5bV+kX/otvPi/+v9DSAzKnrBqqbbB31k="; # hexolexo
         allowedIPs = ["10.0.0.2/32"];
       }
-      #{
-      #publicKey = "LIOuTaH9hb6tVrQHADclTFnCcRFD9DHjaVbNSevfGxc="; # toshi
-      #persistentKeepalive = 25;
-      #allowedIPs = ["10.0.0.3/32"];
-      #}
-      #{
-      #publicKey = "v54b/A7ynLrcXBMcgJkf6vgzJgra8Z3BkaFHMy1RMWk="; # death
-      #persistentKeepalive = 25;
-      #allowedIPs = ["10.0.0.4/32"];
-      #}
+      {
+        publicKey = "LIOuTaH9hb6tVrQHADclTFnCcRFD9DHjaVbNSevfGxc="; # toshi
+        persistentKeepalive = 25;
+        allowedIPs = ["10.0.0.3/32"];
+      }
+      {
+        publicKey = "v54b/A7ynLrcXBMcgJkf6vgzJgra8Z3BkaFHMy1RMWk="; # death
+        persistentKeepalive = 25;
+        allowedIPs = ["10.0.0.4/32"];
+      }
       #{
       #publicKey = "KsWkLxtO3pbgeolMGpF1PhuMTg9vfcZ2GuPUyoYT6Xg="; # Euroacorn
       #allowedIPs = ["10.0.0.5/32"];
@@ -42,10 +42,10 @@
       #publicKey = "3kXYxT2uOFigoEhFzTt7X63MSt0Vt9v9/cI+z/HxVAY="; # beco-server
       #allowedIPs = ["10.0.0.10/32"];
       #}
-      #{
-      #publicKey = "WHTgVz8DligoY53aAMHOso5UfTI3PfdPT+SVP1A+dQw="; # tempr
-      #allowedIPs = ["10.0.0.11/32"];
-      #}
+      {
+        publicKey = "WHTgVz8DligoY53aAMHOso5UfTI3PfdPT+SVP1A+dQw="; # tempr
+        allowedIPs = ["10.0.0.11/32"];
+      }
     ];
   };
   networking.firewall.allowedUDPPorts = [51820];

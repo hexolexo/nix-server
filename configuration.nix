@@ -10,7 +10,7 @@ in {
     ./services/virtualisation.nix
     # Optional Services: #
     ./services/paperless-ngx.nix
-    ./containers/jitsi.nix
+    ./containers/murmur.nix
     #./containers/minecraft.nix     # It's been a while since the last weeklong mc obsession with friends
     #./containers/mindustry.nix
     #./containers/terraria.nix      #  WARN: Untested

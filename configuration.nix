@@ -8,6 +8,7 @@ in {
     ./services/wireguard.nix
     ./services/git.nix
     ./services/virtualisation.nix
+    ./services/deploy.nix
     # Optional Services: #
     ./services/paperless-ngx.nix
     ./containers/murmur.nix

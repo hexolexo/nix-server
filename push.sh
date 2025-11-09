@@ -1,10 +1,18 @@
 #!/bin/bash
+git push "$@" || { echo "Push failed"; exit 1; }
 
-git push "$@"
-
-if [ $? -eq 0 ]; then
-    ssh root@server "cd /etc/nixos && git pull && nixos-rebuild switch" && timeout 5 git push github master
-else
-    echo "Push failed, deployment aborted"
+ssh root@server 'cd /etc/nixos && git pull && systemctl start deploy-watchdog && nixos-rebuild test' || {
+    echo "Rebuild test failed, not switching"
+    ssh root@server 'systemctl stop deploy-watchdog'
     exit 1
-fi
+}
+while ssh root@server 'pgrep nixos-rebuild' 2>/dev/null; do 
+    sleep 5
+done
+
+sleep 10
+
+ssh root@server 'systemctl stop deploy-watchdog && nixos-rebuild switch'
+
+git push github master 2>/dev/null || echo "GitHub push failed"
+

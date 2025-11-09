@@ -9,6 +9,7 @@
       services.murmur = {
         enable = true;
         openFirewall = true;
+        settings.bindaddr = "10.0.0.1";
         #password = "your-server-password"; # Optional server password
       };
       system.stateVersion = "25.05";

@@ -4,7 +4,7 @@
 #in
 {
   environment.systemPackages = with pkgs; [
-    pigz
+    borgbackup
   ];
   services = {
     openssh = {

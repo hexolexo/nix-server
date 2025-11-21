@@ -18,18 +18,19 @@
         persistentKeepalive = 25;
         allowedIPs = ["10.0.0.4/32"];
       }
-      #{
-      #publicKey = "KsWkLxtO3pbgeolMGpF1PhuMTg9vfcZ2GuPUyoYT6Xg="; # Euroacorn
-      #allowedIPs = ["10.0.0.5/32"];
-      #}
+      {
+        publicKey = "7dfeqJu3P6toUdHD73g6c8j/SZyhhHGaUpXSPP3reng="; # phone
+        allowedIPs = ["10.0.0.5/32"];
+      }
       #{
       #publicKey = "ePTxrL7Fgqdl6HO/ZImMHMLnXBysGQ8+h0t+6pBJiRE="; # guest
       #allowedIPs = ["10.0.0.6/32"];
       #}
-      {
-        publicKey = "7dfeqJu3P6toUdHD73g6c8j/SZyhhHGaUpXSPP3reng="; # phone
-        allowedIPs = ["10.0.0.7/32"];
-      }
+
+      #{
+      #publicKey = "KsWkLxtO3pbgeolMGpF1PhuMTg9vfcZ2GuPUyoYT6Xg="; # Euroacorn
+      #allowedIPs = ["10.0.0.7/32"];
+      #}
       #{
       #publicKey = "vYJqxIRzAw79kVV1gdca5R31GnZVjx1PtT0tmh8jSis="; # beco
       #allowedIPs = ["10.0.0.8/32"];

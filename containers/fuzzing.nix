@@ -32,13 +32,9 @@
         binutils
         micro
       ];
-      services.getty.autologinUser = "fuzzy";
 
       boot.isContainer = true;
 
-      systemd.tmpfiles.rules = [
-        "d /tmp/cores 1777 root root -"
-      ];
       system.stateVersion = "25.05";
     };
   };

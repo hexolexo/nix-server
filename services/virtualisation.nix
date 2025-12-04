@@ -36,7 +36,7 @@
     dosfstools
     opentofu
     libxslt # tofu window xml dependency
-    win-virtio
+    virtio-win
     win-spice
     bridge-utils
     nftables

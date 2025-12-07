@@ -27,7 +27,7 @@ in {
     #./containers/tarpit.nix
   ];
   age = {
-    secrets.sshKey.file = ./secrets/sshKey.age;
+    #secrets.sshKey.file = ./secrets/sshKey.age;
     identityPaths = ["/etc/ssh/ssh_host_ed25519_key"];
   };
 

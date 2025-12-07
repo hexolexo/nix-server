@@ -1,9 +1,6 @@
-{
-  pkgs,
-  config,
-  ...
-}: let
+{pkgs, ...}: let
   agenix = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz";
+  global = import ./../global.nix;
 in {
   imports = [
     "${agenix}/modules/age.nix"
@@ -14,6 +11,7 @@ in {
     ./services/git.nix
     ./services/virtualisation.nix
     ./services/deploy.nix
+    ./global.nix
     # Optional Services: #
     ./services/paperless-ngx.nix
     ./containers/murmur.nix
@@ -65,13 +63,9 @@ in {
       description = "hexolexo";
       extraGroups = ["networkmanager" "wheel"];
       packages = with pkgs; [go];
-      openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBn10kNU91QinvzDnJ/d6SMivvh+732dmcbHY4YurxGM hexolexo@hexolexo"
-      ];
+      openssh.authorizedKeys.keys = global.authorisedKeys;
     };
-    root.openssh.authorizedKeys.keys = [
-      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBn10kNU91QinvzDnJ/d6SMivvh+732dmcbHY4YurxGM hexolexo@hexolexo"
-    ];
+    root.openssh.authorizedKeys.keys = global.authorisedKeys;
   };
 
   environment.systemPackages = with pkgs; [

@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  secrets = import ./../secrets.nix;
+  global = import ./../global.nix;
 in {
   # Soft Serve Git server
   services.soft-serve = {
@@ -10,9 +10,7 @@ in {
       ssh.public_url = "ssh://localgit";
       host = "10.0.0.1";
       port = 23231;
-      initial_admin_keys = [
-        "${secrets.sshKey}"
-      ];
+      initial_admin_keys = global.authorisedKeys;
     };
   };
 

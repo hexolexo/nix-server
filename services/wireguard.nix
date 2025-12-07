@@ -19,7 +19,7 @@
         allowedIPs = ["10.0.0.4/32"];
       }
       {
-        publicKey = "7dfeqJu3P6toUdHD73g6c8j/SZyhhHGaUpXSPP3reng="; # phone
+        publicKey = "Bud5mS1lYNIBYb6efoPZ/MrNjoQvXwsKxAUCTgBU9jY="; # phone
         allowedIPs = ["10.0.0.5/32"];
       }
       #{

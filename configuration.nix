@@ -11,7 +11,6 @@ in {
     ./services/git.nix
     ./services/virtualisation.nix
     ./services/deploy.nix
-    ./global.nix
     # Optional Services: #
     ./services/paperless-ngx.nix
     ./containers/murmur.nix

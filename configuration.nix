@@ -1,6 +1,6 @@
 {pkgs, ...}: let
   agenix = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz";
-  global = import ./../global.nix;
+  global = import ./global.nix;
 in {
   imports = [
     "${agenix}/modules/age.nix"

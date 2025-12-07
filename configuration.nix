@@ -61,11 +61,11 @@ in {
       description = "hexolexo";
       extraGroups = ["networkmanager" "wheel"];
       packages = with pkgs; [go];
-      openssh.authorizedKeys.keys = [
+      openssh.authorizedKeys.keyFiles = [
         config.age.secrets.sshKey.path
       ];
     };
-    root.openssh.authorizedKeys.keys = [
+    root.openssh.authorizedKeys.keyFiles = [
       config.age.secrets.sshKey.path
     ];
   };

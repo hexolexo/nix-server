@@ -65,12 +65,12 @@ in {
       description = "hexolexo";
       extraGroups = ["networkmanager" "wheel"];
       packages = with pkgs; [go];
-      openssh.authorizedKeys.keyFiles = [
-        config.age.secrets.sshKey.path
+      openssh.authorizedKeys.keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBn10kNU91QinvzDnJ/d6SMivvh+732dmcbHY4YurxGM hexolexo@hexolexo"
       ];
     };
-    root.openssh.authorizedKeys.keyFiles = [
-      config.age.secrets.sshKey.path
+    root.openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBn10kNU91QinvzDnJ/d6SMivvh+732dmcbHY4YurxGM hexolexo@hexolexo"
     ];
   };
 

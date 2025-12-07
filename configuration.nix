@@ -1,7 +1,12 @@
-{pkgs, ...}: let
-  secrets = import ./secrets.nix;
+{
+  pkgs,
+  config,
+  ...
+}: let
+  agenix = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz";
 in {
   imports = [
+    "${agenix}/modules/age.nix"
     # Required Services #
     ./hardware-configuration.nix
     ./services/connection.nix
@@ -57,11 +62,11 @@ in {
       extraGroups = ["networkmanager" "wheel"];
       packages = with pkgs; [go];
       openssh.authorizedKeys.keys = [
-        "${secrets.sshKey}"
+        config.age.secrets.sshKey.path
       ];
     };
     root.openssh.authorizedKeys.keys = [
-      "${secrets.sshKey}"
+      config.age.secrets.sshKey.path
     ];
   };
 
@@ -73,6 +78,7 @@ in {
     pkg-config
     alsa-lib.dev
     clang
+    (pkgs.callPackage "${agenix}/pkgs/agenix.nix" {})
   ];
 
   networking = {

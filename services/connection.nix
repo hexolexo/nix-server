@@ -10,7 +10,7 @@
     openssh = {
       enable = true;
       ports = [6000];
-      settings.PasswordAuthentication = false;
+      settings.PasswordAuthentication = true;
     };
     fail2ban.enable = true;
   };

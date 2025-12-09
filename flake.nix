@@ -1,5 +1,6 @@
 {
   inputs = {
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     deploy-rs.url = "github:serokell/deploy-rs";
   };
@@ -8,8 +9,9 @@
     self,
     nixpkgs,
     deploy-rs,
+    nix-minecraft,
   }: {
-    nixosConfigurations.myserver = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.vault = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [./configuration.nix];
     };
@@ -19,9 +21,10 @@
       remoteBuild = true;
       profiles.system = {
         user = "root";
+        sshUser = "root";
         path =
           deploy-rs.lib.x86_64-linux.activate.nixos
-          self.nixosConfigurations.myserver;
+          self.nixosConfigurations.vault;
       };
     };
 

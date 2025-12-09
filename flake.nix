@@ -14,8 +14,8 @@
       modules = [./configuration.nix];
     };
 
-    deploy.nodes.myserver = {
-      hostname = "myserver.example.com";
+    deploy.nodes.vault = {
+      hostname = "server";
       remoteBuild = true;
       profiles.system = {
         user = "root";

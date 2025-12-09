@@ -1,9 +1,7 @@
 {pkgs, ...}: let
-  agenix = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/main.tar.gz";
   global = import ./global.nix;
 in {
   imports = [
-    "${agenix}/modules/age.nix"
     # Required Services #
     ./hardware-configuration.nix
     ./services/connection.nix
@@ -76,7 +74,6 @@ in {
     pkg-config
     alsa-lib.dev
     clang
-    (pkgs.callPackage "${agenix}/pkgs/agenix.nix" {})
   ];
 
   networking = {

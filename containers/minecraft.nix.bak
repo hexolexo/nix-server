@@ -75,90 +75,90 @@
               "mods" = pkgs.linkFarmFromDrvs "mods" (builtins.attrValues {
                 fabric-api = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/P7dR8mSH/versions/UapVHwiP/fabric-api-0.92.6%2B1.20.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 lithium-fabric = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/gvQqBUqZ/versions/iEcXOkz4/lithium-fabric-mc1.20.1-0.11.4.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 FerriteCore = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/uXXizFIs/versions/unerR5MN/ferritecore-6.0.1-fabric.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 Krypton = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/fQEb0iXm/versions/jiDwS0W1/krypton-0.2.3.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 Veinminer = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/OhduvhIc/versions/PSctVdKm/Veinminer-2.0.7.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Silk = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/aTaCgKLW/versions/3H0nUJhq/silk-all-1.10.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Farmers-Delight-Refabricated = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/7vxePowz/versions/Z8UNayLO/FarmersDelight-1.20.1-2.4.1%2Brefabricated.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Distant-Friends = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/CDaJ8xGu/versions/ElfqWcKI/DistantFriends-fabric-1.20.1-0.5.5.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Create-Fabric = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/Xbc0uyRg/versions/HAqwA6X1/create-fabric-6.0.8.1%2Bbuild.1744-mc1.20.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Steam-n-Rails = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/ZzjhlDgM/versions/VFhdqLko/Steam_Rails-1.6.9%2Bfabric-mc1.20.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Create-Crafts-n-Additions = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/kU1G12Nn/versions/Y3djqUGn/createaddition-fabric%2B1.20.1-1.3.3.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Copycats = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/UT2M39wf/versions/WYmjbo0H/copycats-2.2.2%2Bmc.1.20.1-fabric.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Create-Slice-n-Dice = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/GmjmRQ0A/versions/EzpVcwYV/sliceanddice-fabric-3.3.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 Create-Deco = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/sMvUb4Rb/versions/GsxgfeNu/createdeco-2.0.2-1.20.1-fabric.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Create-Big-Cannons = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/GWp4jCJj/versions/LTezmxKD/createbigcannons-5.10.0%2Bmc.1.20.1-fabric.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 Create-Structures = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/IAnP4np7/versions/nqsTHZwx/create-structures-0.1.1-1.20.1-FABRIC.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
                 Create-Interactive = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/MyfCcqiE/versions/66F5LBos/create_interactive-1.1.1-beta.4_1.20.1-fabric.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Create-Numismatics = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/Jdbbtt0i/versions/SJpLT0Bq/CreateNumismatics-1.0.15%2Bfabric-mc1.20.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
 
                 Create-Aquatic-Ambitions = pkgs.fetchurl {
                   url = "https://cdn.modrinth.com/data/9SyaPzp7/versions/RFho1G3m/create_aquatic_ambitions-fabric-1.1.2%2B1.20.1.jar";
-                  sha256 = "1syyfxwybcsa0kyfwsfhikcp13j5qm2mkdq4mc8j2sd3dm3m1khf";
+                  sha256 = "..."; # nix-prefetch-url <url>
                 };
               });
             };

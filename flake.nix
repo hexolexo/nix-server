@@ -8,12 +8,16 @@
   outputs = {
     self,
     nixpkgs,
-    deploy-rs,
     nix-minecraft,
+    deploy-rs,
   }: {
     nixosConfigurations.vault = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      modules = [./configuration.nix];
+      modules = [
+        ./configuration.nix
+        {_module.args = {inherit nix-minecraft;};}
+        nix-minecraft.nixosModules.minecraft-servers
+      ];
     };
 
     deploy.nodes.vault = {

@@ -15,8 +15,8 @@
       system = "x86_64-linux";
       modules = [
         ./configuration.nix
-        {_module.args = {inherit nix-minecraft;};}
         nix-minecraft.nixosModules.minecraft-servers
+        {_module.args = {inherit nix-minecraft;};}
       ];
     };
 

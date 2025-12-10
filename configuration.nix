@@ -13,7 +13,7 @@ in {
     ./services/paperless-ngx.nix
     ./containers/murmur.nix
     #./services/apt-cacher-ng.nix
-    ./containers/minecraft.nix # It's been a while since the last weeklong mc obsession with friends
+    ./services/minecraft.nix # It's been a while since the last weeklong mc obsession with friends
     #./containers/mindustry.nix
     #./containers/terraria.nix      #  WARN: Untested
     #./containers/I2P.nix           #  BUG: ISP blocking port forwarding reducing it's efficacy
